@@ -13,7 +13,7 @@ pong-wars-forSiv3D uses the following MIT licensed library.
 
 # Reference
 
-JavaScript with some HTML & CSS by @vnglst https://github.com/vnglst/pong-wars/
-Python by @vocdex https://github.com/vocdex/pong-wars-python
-MATLAB by @minoue-xx https://github.com/minoue-xx/digital-art-with-matlab
-M5Stack by @anoken https://github.com/anoken/pong-wars-forM5Stack
+- JavaScript with some HTML & CSS by @vnglst https://github.com/vnglst/pong-wars/
+- Python by @vocdex https://github.com/vocdex/pong-wars-python
+- MATLAB by @minoue-xx https://github.com/minoue-xx/digital-art-with-matlab
+- M5Stack by @anoken https://github.com/anoken/pong-wars-forM5Stack
