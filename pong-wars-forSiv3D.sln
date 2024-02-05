@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pong-wars-forSiv3D", "pong-wars-forSiv3D.vcxproj", "{B2F2AEA2-E318-496A-B633-8BFF83B4616B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2F2AEA2-E318-496A-B633-8BFF83B4616B}.Debug|x64.ActiveCfg = Debug|x64
+		{B2F2AEA2-E318-496A-B633-8BFF83B4616B}.Debug|x64.Build.0 = Debug|x64
+		{B2F2AEA2-E318-496A-B633-8BFF83B4616B}.Release|x64.ActiveCfg = Release|x64
+		{B2F2AEA2-E318-496A-B633-8BFF83B4616B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A00CF510-91ED-449B-9BA2-61F82D0BC2FB}
+	EndGlobalSection
+EndGlobal
