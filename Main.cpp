@@ -153,6 +153,8 @@ void Main()
 {
 	Window::Resize(800, 640);
 	ResizeMode::Actual;
+	const String applicationName = U"pong-wars-forSiv3D";
+	Window::SetTitle(applicationName);
 
 	Array<Ball> balls = {
 		Ball{ Palette::Blue, Team::Red, Vec2{ 200, 200 } },
