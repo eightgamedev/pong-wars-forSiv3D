@@ -2,6 +2,9 @@
 
 This software is the OpenSiv3D version of Mr.vnglst's pong-wars.
 
+![screenshot](https://github.com/eightgamedev/pong-wars-forSiv3D/assets/47023171/420b5934-2b57-4922-b0ea-dc7912c00938)
+
+
 # License
 
 pong-wars-forSiv3D is provided under the MIT License. Please see the LICENCE file for details.
