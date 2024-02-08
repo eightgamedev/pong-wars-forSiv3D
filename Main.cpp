@@ -97,11 +97,11 @@ private:
 	Vec2 m_ballVelocity;
 };
 
-class Brock
+class Block
 {
 public:
-	Brock() = default;
-	Brock(const Vec2& pos, Team team, const Vec2& size)
+	Block() = default;
+	Block(const Vec2& pos, Team team, const Vec2& size)
 		: m_team(team)
 		, m_rect(pos, size)
 		, m_color(teamColors.at(team))
@@ -135,16 +135,16 @@ private:
 	Color m_color;
 };;
 
-void checkCollisionAndBounce(Ball& ball, Grid<Brock>& brocks) {
-	for (auto& brock : brocks) {
-		if (ball.getCircle().intersects(brock.getRect())) {
-			if (ball.getTeam() == brock.getTeam())
+void checkCollisionAndBounce(Ball& ball, Grid<Block>& blocks) {
+	for (auto& block : blocks) {
+		if (ball.getCircle().intersects(block.getRect())) {
+			if (ball.getTeam() == block.getTeam())
 			{
 				continue;
 			}
 
-			ball.bounce(brock.getRect());
-			brock.setTeam(ball.getTeam());
+			ball.bounce(block.getRect());
+			block.setTeam(ball.getTeam());
 		}
 	}
 }
@@ -163,10 +163,10 @@ void Main()
 		Ball{ Palette::Green, Team::Yellow,	Vec2{ 600, 600 } },
 	};
 
-	constexpr Vec2 BrockSize(20, 20);
-	const Point GridSize = Scene::Size() / BrockSize.asPoint();
+	constexpr Vec2 BlockSize(20, 20);
+	const Point GridSize = Scene::Size() / BlockSize.asPoint();
 
-	Grid<Brock> brocks(GridSize);
+	Grid<Block> blocks(GridSize);
 
 	for (int32 y = 0; y < GridSize.y; ++y)
 	{
@@ -181,21 +181,21 @@ void Main()
 			{
 				team = (y < GridSize.y / 2) ? Team::Green : Team::Yellow;
 			}
-			brocks[y][x] = Brock{ Vec2(x, y) * BrockSize, team, BrockSize };
+			blocks[y][x] = Block{ Vec2(x, y) * BlockSize, team, BlockSize };
 		}
 	}
 
 	while (System::Update())
 	{
-		for (auto& brock : brocks)
+		for (auto& block : blocks)
 		{
-			brock.draw();
+			block.draw();
 		}
 
 		for (auto& ball : balls)
 		{
 			ball.update();
-			checkCollisionAndBounce(ball, brocks);
+			checkCollisionAndBounce(ball, blocks);
 			ball.draw();
 		}
 	}
